@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    min-height: 375px;
+    max-width: 375px;
+    margin: auto;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 90px 30px;
+    padding: 20px 20px 25px 20px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.overlay {
+    top: 0;
+    width: 87%;
+    height: 53%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+}
+
+.overlay:hover {
+    top: 0;
+    display: flex;
+    margin-top: 22px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(0, 255, 247, 0.4);
+    opacity: 1;
+    transition: 0.1s step-start;
+}
+
+.main-img {
+    position: relative;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.main-img:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.title {
+    padding: 15px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%)
+}
+
+.text {
+    padding-bottom: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.info-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    color: hsl(215, 51%, 70%);
+}
+
+.info-span {
+    color: hsl(178, 100%, 50%);
+}
+
+.avatar-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0 5px 0;
+}
+
+.avatar-img {
+    width: 13%;
+    padding-right: 10px;
+}
+
+.user-text {
+    color: hsl(215, 51%, 70%);
+}
+
+.user-subtext {
+    color: hsl(0, 0%, 100%);
+}
+
+.user-subtext:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
